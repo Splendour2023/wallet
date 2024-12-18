@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Crypto<span>Wallet</span></h1>
+    </header>
+
+    <main>
+        <!-- Wallet Overview Section -->
+        <section class="wallet-overview">
+            <h2>Account Balance</h2>
+            <div class="balance">
+                <h3>$12,345.67</h3>
+                <p>Total Wallet Value</p>
+            </div>
+            <div class="actions">
+                <button class="btn" id="send-funds">Send Funds</button>
+                <button class="btn" id="receive-funds">Receive Funds</button>
+            </div>
+        </section>
+
+        <!-- Transaction History -->
+        <section class="transaction-history">
+            <h2>Transaction History</h2>
+            <div class="transactions">
+                <div class="transaction">
+                    <p>Sent 0.05 BTC</p>
+                    <span>- $2,000</span>
+                </div>
+                <div class="transaction">
+                    <p>Received 1.2 ETH</p>
+                    <span>+ $4,500</span>
+                </div>
+                <div class="transaction">
+                    <p>Sent 100 USDT</p>
+                    <span>- $100</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <form id="modal-form">
+                <label for="crypto-address">Crypto Address</label>
+                <input type="text" id="crypto-address" placeholder="Enter wallet address">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+                <button type="submit" class="btn">Confirm</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 CryptoWallet. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

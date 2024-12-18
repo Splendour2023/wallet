@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ff4081;
+}
+
+header span {
+    color: #5c6bc0;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Wallet Overview */
+.wallet-overview {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.balance h3 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actions .btn {
+    padding: 10px 20px;
+    border: none;
+    background: #ff4081;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.actions .btn:hover {
+    transform: scale(1.1);
+}
+
+/* Transaction History */
+.transaction-history {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.transaction-history .transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+
+.modal-content {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #ff4081;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-content .btn {
+    width: 100%;
+    padding: 10px;
+    background: #5c6bc0;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.modal-content .btn:hover {
+    transform: scale(1.1);
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
